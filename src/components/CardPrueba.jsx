@@ -20,8 +20,8 @@ const CardPrueba = () => {
           style={{
             justifyContent: "center",
             alignItems: "center",
-            width: 110,
-            height: 110,
+            width: 90,
+            height: 90,
           }}
         >
           <Text>Puntos ganados</Text>
@@ -32,8 +32,8 @@ const CardPrueba = () => {
           style={{
             justifyContent: "center",
             alignItems: "center",
-            width: 110,
-            height: 110,
+            width: 90,
+            height: 90,
           }}
         >
           <Text>Reciclados</Text>
@@ -44,11 +44,11 @@ const CardPrueba = () => {
           style={{
             justifyContent: "center",
             alignItems: "center",
-            width: 110,
-            height: 110,
+            width: 90,
+            height: 90,
           }}
         >
-          <Text>GananciasTest</Text>
+          <Text>Ganancias</Text>
         </Surface>
 
       </HStack>
