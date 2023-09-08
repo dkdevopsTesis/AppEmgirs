@@ -4,32 +4,22 @@
  *
  * @format
  */
-
 import React from 'react';
 import type { PropsWithChildren } from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import Home from './components/Card';
+
 import { NavigationContainer } from '@react-navigation/native';
 
 import { createStackNavigator } from '@react-navigation/stack';
-import { Card } from '@rneui/base';
+
+import HomeRecycler from './components/HomeRecycler';
+import CardProfile from './custom-components/CardProfile';
+import { JSX } from 'react/jsx-runtime';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -56,7 +46,7 @@ function SettingsScreen() {
 
     <View>
    
-      <Text>RUTAS</Text>
+      <Text>RUTAS 3</Text>
     </View>
 
   );
@@ -69,8 +59,8 @@ function MyTabs() {
  
     <Tab.Navigator>
  
-      <Tab.Screen name="Home" component={SettingsScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name="Home" component={HomeRecycler} />
+      <Tab.Screen name="Settings" component={CardProfile} />
       <Tab.Screen name="Direcciones" component={SettingsScreen} />
     </Tab.Navigator>
  
